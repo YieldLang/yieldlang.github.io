@@ -3,8 +3,11 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>YieldLang - A Meta-Language for LLMs to Generate Structured Information</title>
+	<meta
+		name="description"
+		content="A Meta-Language for LLMs to generate structured information."
+	/>
 </svelte:head>
 
 <section>
