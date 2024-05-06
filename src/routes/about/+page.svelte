@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About</title>
+	<title>About YieldLang</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
@@ -12,16 +12,24 @@
 		<b>Work in progress now.</b>
 	</p>
 	<p>
-		You can install the YieldLang by typing the following into your command
-		line and following the prompts:
+		You can install the <code>YieldLang</code> by typing the following into your
+		command line and following the prompts:
 	</p>
 
-	<pre><span class="pip">pip</span> <span class="install">install</span
+	<pre style="user-select: all;"><code
+			style="margin-right: 0.5em; user-select: none;">$</code
+		><span class="pip">pip</span> <span class="install">install</span
 		> yieldlang</pre>
 	<p>
 		More information on the GitHub home page: <a
 			href="https://github.com/YieldLang"
-			target="_blank">github.com/YieldLang</a
+			target="_blank"><b>github.com/YieldLang</b></a
+		>
+	</p>
+	<p>
+		This site is located at: <a
+			href="https://github.com/YieldLang/yieldlang.github.io"
+			target="_blank">yieldlang.github.io</a
 		>
 	</p>
 </div>
