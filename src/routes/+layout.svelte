@@ -1,6 +1,6 @@
 <script>
-	import Header from './Header.svelte';
-	import './styles.css';
+	import Header from "./Header.svelte";
+	import "./styles.css";
 </script>
 
 <div class="app">
@@ -11,7 +11,11 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://docs.yieldlang.com">docs.yieldlang.com</a> to learn YieldLang</p>
+		<p>
+			visit <a href="https://docs.yieldlang.com" target="_blank"
+				>docs.yieldlang.com</a
+			> to learn YieldLang
+		</p>
 	</footer>
 </div>
 
