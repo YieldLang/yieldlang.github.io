@@ -33,8 +33,8 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/YieldLang" target="_blank">
-			<img src={github} alt="GitHub" />
+		<a href="/yieldlang" target="_blank">
+			<img src={github} alt="GitHub Repo" />
 		</a>
 	</div>
 </header>
