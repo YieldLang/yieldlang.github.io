@@ -9,27 +9,33 @@
 	</h1>
 
 	<p>
-		<b>Work in progress now.</b>
+		<code>YieldLang</code> is a
+		<a href="https://en.wikipedia.org/wiki/Metalanguage" target="_blank"
+			>meta-language</a
+		> for generating structured text (ST) for large language models (LLMs) or
+		guide LLMs to generate ST. Currently provided as a Python package.
 	</p>
 	<p>
-		You can install the <code>YieldLang</code> by typing the following into your
-		command line and following the prompts:
+		To install the <code>YieldLang</code>, use the following command in your
+		terminal:
 	</p>
 
 	<pre style="user-select: all;"><code
 			style="margin-right: 0.5em; user-select: none;">$</code
 		><span class="pip">pip</span> <span class="install">install</span
 		> yieldlang</pre>
+	<ul>
+		<li>Based on a coroutine generator and sampler architecture</li>
+		<li>
+			Stream-sends characters and parses the context above into a syntax
+			tree
+		</li>
+		<li>Build formal grammars with classes, methods, and combinators</li>
+	</ul>
 	<p>
 		More information on the GitHub home page: <a
 			href="https://github.com/YieldLang"
 			target="_blank"><b>github.com/YieldLang</b></a
-		>
-	</p>
-	<p>
-		This site is located at: <a
-			href="https://github.com/YieldLang/yieldlang.github.io"
-			target="_blank">yieldlang.github.io</a
 		>
 	</p>
 </div>

@@ -3,7 +3,9 @@
 </script>
 
 <svelte:head>
-	<title>YieldLang - A Meta-Language for LLMs to Generate Structured Information</title>
+	<title
+		>YieldLang - A Meta-Language for LLMs to Generate Structured Information</title
+	>
 	<meta
 		name="description"
 		content="A Meta-Language for LLMs to generate structured information."
@@ -13,13 +15,13 @@
 <section>
 	<h1>
 		<span class="welcome">
-			<picture>
-				<img src={main_logo} alt="LOGO" />
+			<picture class="hero">
+				<img src={main_logo} alt="LOGO" draggable="false" />
 			</picture>
 		</span>
 
 		<p>
-			A Meta-Language for LLMs to <br />Generate Structured Information
+			A Meta-Language for LLMs to <br />Produce or Parse Structured Info
 		</p>
 	</h1>
 
@@ -46,7 +48,8 @@
 		position: relative;
 		width: 100%;
 		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		padding: 0 0 calc(100% * 0.618 * 0.382) 0;
+		user-select: none;
 	}
 
 	.welcome img {
@@ -55,5 +58,18 @@
 		height: 100%;
 		top: 0;
 		display: block;
+	}
+
+	.hero {
+		padding-top: 3.5rem;
+	}
+
+	.hero img {
+		transition: all 0.3s ease;
+	}
+
+	.hero img:hover {
+		transform: scale(1.1, 1.1);
+		transition: all 0.3s ease;
 	}
 </style>
