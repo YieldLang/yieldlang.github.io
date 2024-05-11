@@ -4,11 +4,11 @@
 
 <svelte:head>
 	<title
-		>YieldLang - A Meta-Language for LLMs to Generate Structured Information</title
+		>YieldLang - A meta-Language for LLMs to produce or parse structured info</title
 	>
 	<meta
 		name="description"
-		content="A Meta-Language for LLMs to generate structured information."
+		content="A meta-Language for LLMs to produce or parse structured info."
 	/>
 </svelte:head>
 
