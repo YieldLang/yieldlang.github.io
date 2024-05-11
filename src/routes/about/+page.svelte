@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Typewriter from "svelte-typewriter";
+	import { concurrent } from "svelte-typewriter";
 </script>
 
 <svelte:head>
@@ -8,11 +8,9 @@
 </svelte:head>
 
 <div class="text-column">
-	<Typewriter interval={60}>
-		<h1>
-			<span>About the</span> <code>YieldLang</code>
-		</h1>
-	</Typewriter>
+	<h1 use:concurrent={{ interval: 60 }} style="min-height: 1.5em">
+		<span>About the</span> <code>YieldLang</code>
+	</h1>
 
 	<p>
 		<code>YieldLang</code> is a
@@ -30,32 +28,27 @@
 		terminal:
 	</p>
 
-	<Typewriter interval={60}>
-		<pre style="user-select: all; white-space: break-spaces;"><code
-				style="margin-right: 0.5em; user-select: none;">$</code
-			><span class="pip">pip</span> <span class="install">install</span
-			> <span>yieldlang</span></pre>
-	</Typewriter>
-	<Typewriter interval={8}>
-		<ul>
-			<li>🧠 Based on a coroutine generator and sampler architecture</li>
-			<li>
-				🤖 Stream-sends characters and parses the context above into a
-				syntax tree
-			</li>
-			<li>
-				🦾 Build formal grammars with classes, methods, and combinators
-			</li>
-		</ul>
-	</Typewriter>
-	<Typewriter interval={15}>
-		<p>
-			<span>More information on the GitHub home page:</span>
-			<a href="https://github.com/YieldLang" target="_blank"
-				><b>github.com/YieldLang</b></a
-			>
-		</p>
-	</Typewriter>
+	<pre
+		style="user-select: all; white-space: break-spaces; min-height: 1em"
+		use:concurrent={{ interval: 60 }}><code
+			style="margin-right: 0.5em; user-select: none;">$</code
+		><span class="pip">pip</span> <span class="install">install</span> <span
+			>yieldlang</span
+		></pre>
+	<ul use:concurrent={{ interval: 7 }} style="min-height: 1em">
+		<li>🧠 Based on a coroutine generator and sampler architecture</li>
+		<li>
+			🤖 Stream-sends characters and parses the context above into a
+			syntax tree
+		</li>
+		<li>🦾 Build formal grammars with classes, methods, and combinators</li>
+	</ul>
+	<p use:concurrent={{ interval: 15 }} style="min-height: 1em">
+		<span>More information on the GitHub home page:</span>
+		<a href="https://github.com/YieldLang" target="_blank"
+			><b>github.com/YieldLang</b></a
+		>
+	</p>
 </div>
 
 <style>

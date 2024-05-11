@@ -1,5 +1,5 @@
 <script>
-	import Typewriter from "svelte-typewriter";
+	import { concurrent } from "svelte-typewriter";
 	import Header from "./Header.svelte";
 	import "./styles.css";
 </script>
@@ -13,10 +13,10 @@
 
 	<footer>
 		<p>
-			visit <Typewriter element="span"
+			visit <span use:concurrent={{ interval: 15 }}
 				><a href="https://docs.yieldlang.com" target="_blank"
 					>docs.yieldlang.com</a
-				></Typewriter
+				></span
 			> to learn YieldLang
 		</p>
 	</footer>
