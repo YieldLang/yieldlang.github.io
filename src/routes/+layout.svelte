@@ -1,4 +1,5 @@
 <script>
+	import Typewriter from "svelte-typewriter";
 	import Header from "./Header.svelte";
 	import "./styles.css";
 </script>
@@ -12,8 +13,10 @@
 
 	<footer>
 		<p>
-			visit <a href="https://docs.yieldlang.com" target="_blank"
-				>docs.yieldlang.com</a
+			visit <Typewriter element="span"
+				><a href="https://docs.yieldlang.com" target="_blank"
+					>docs.yieldlang.com</a
+				></Typewriter
 			> to learn YieldLang
 		</p>
 	</footer>

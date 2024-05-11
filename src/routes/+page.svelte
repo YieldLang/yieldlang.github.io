@@ -4,11 +4,11 @@
 
 <svelte:head>
 	<title
-		>YieldLang - A meta-Language for LLMs to produce or parse structured info</title
+		>YieldLang - A meta-Language for LLMs to process structured info</title
 	>
 	<meta
 		name="description"
-		content="A meta-Language for LLMs to produce or parse structured info."
+		content="A meta-Language for LLMs to process structured info."
 	/>
 </svelte:head>
 
@@ -19,13 +19,15 @@
 				<img src={main_logo} alt="LOGO" draggable="false" />
 			</picture>
 		</span>
-
-		<p>
-			A Meta-Language for LLMs to <br />Produce or Parse Structured Info
-		</p>
+		<div style="width: 61.8%; margin: 0">
+			<p>A Meta-Language for LLMs to Process Structured Info</p>
+		</div>
 	</h1>
 
-	<a href="https://github.com/YieldLang" target="_blank"
+	<a
+		href="https://github.com/YieldLang"
+		target="_blank"
+		style="margin-top: -2.5em"
 		><h2 style="font-size: 1.414em"><b>github.com/YieldLang</b></h2></a
 	>
 </section>
@@ -40,7 +42,7 @@
 	}
 
 	h1 {
-		width: 100%;
+		display: contents;
 	}
 
 	.welcome {
@@ -60,16 +62,12 @@
 		display: block;
 	}
 
-	.hero {
-		padding-top: 3.5rem;
-	}
-
 	.hero img {
 		transition: all 0.3s ease;
 	}
 
 	.hero img:hover {
-		transform: scale(1.1, 1.1);
+		transform: scale(1.2);
 		transition: all 0.3s ease;
 	}
 </style>
